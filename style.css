@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    background-color: #123858;
+}
+
+#nav-home{
+    display: inline-block;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    border: 1px solid black;    
+}
+
+#nav-home a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+#nav-home li {
+    display: inline-block; 
+}
+
+#logo-site{
+  height: 4rem;
+}
+
+#titulo-tech{
+  display: inline-block;
+}
+
+#titulo-tech a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-links{
+    color: white;
+}
+
+.header-links:after {
+    display:block;
+    content: '';
+    width: inherit;
+    border-bottom: solid 3px rgb(255, 255, 255);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .header-links:hover:after { transform: scaleX(1); }
+  
+  .header-links.from-left:after {
+    transform-origin: left;
+  }
+  
+  .header-links.from-right:after {
+    transform-origin: right;
+  }
+
+#info-box{
+    background-color: rgb(0, 64, 142);
+    border: 3px solid black;
+    border-radius: 8px;
+    width: 25%;
+    height: 10%;
+    float: right;
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+#info-box h5{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#info-box img:not(:first-of-type){
+  margin-top: 20px;
+}
+
+.logos{
+  width: 4.5rem;;
+}
+
+#text-home{
+  color: #fff;
+}
+
+#text-home h3{
+  margin-top: 7px;
+}
+
+#corVerde{
+  color: green;
+}
+
+#corAzulescuro{
+  color: blue;
+}
+
+#corlaranja{
+  color: orange;
+}
+
+#corAzul{
+  color: rgb(6, 208, 181);
+}
