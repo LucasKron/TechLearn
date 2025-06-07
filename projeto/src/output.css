@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-white: #fff;
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
@@ -166,37 +167,23 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .flex-row {
     flex-direction: row;
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .bg-azulbackground {
     background-color: var(--color-azulbackground);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
   }
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .decoration-0 {
+    text-decoration-thickness: 0px;
   }
   .hover\:border-b-2 {
     &:hover {
@@ -212,16 +199,10 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
-      --tw-outline-style: solid;
     }
   }
 }
